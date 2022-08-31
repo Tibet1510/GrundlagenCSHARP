@@ -26,8 +26,39 @@ Console.WriteLine("Was soll umgewandelt werden?");
         "\n (2) Umrechnung von Celsius nach Fahrenheit"+
         "\n (3) Umrechnung von Kelvin nach Celsius"+
         "\n (4) Umrechnung von Kelvin nach Fahrenheit");
-int temp = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Erste Zahl:");
-float x = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Zweite Zahl:");
-float y = Convert.ToInt32(Console.ReadLine());
+int x = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Zahl:");
+float temp1 = float.Parse(Console.ReadLine());
+switch(x)
+{ case 1:
+
+        if (temp1 > -217.16)
+        {
+            temp1 = (float)(temp1 + 273.15);
+            Console.WriteLine(temp1 + " Kelvin!");
+        }
+        else
+        {
+            Console.WriteLine("Alles unter 217.15 Celsius sind unter dem absoluten Nullpunkt und demnach nicht möglich!");
+        }
+    break;
+case 2:
+        temp1 = (temp1 * 9 / 5) + 32;
+        Console.WriteLine(temp1 + " Fahrenheit!");
+        break;
+case 3:
+        temp1 = (float)(temp1 - 273.15);
+        Console.WriteLine(temp1 + " Celsius!");
+        break;
+case 4:
+        if (temp1 >= 0)
+        {
+            temp1 = (float)((temp1 - 273.15) * 9 / 5 + 32);
+            Console.WriteLine(temp1 + " Fahrenheit!");
+        }
+        else
+        {
+            Console.WriteLine("0 Kelvin ist der absolute Nullpunkt");
+        }
+        break;
+}
