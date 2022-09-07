@@ -1,8 +1,8 @@
-﻿/*
+﻿
 int x = 9;
 double y = 8;
 int z = 6;
-*/
+
 
 //Console.WriteLine(x-- == y);    //Ausgabe: False
 
@@ -20,7 +20,7 @@ int z = 6;
 
 //Console.WriteLine((x*=-2) == z );               //Ausgabe: False
 
-Console.WriteLine("Was soll umgewandelt werden?");
+/*Console.WriteLine("Was soll umgewandelt werden?");
     Console.WriteLine(
         "\n (1) Umrechnung von Celsius nach Kelvin"+
         "\n (2) Umrechnung von Celsius nach Fahrenheit"+
@@ -62,3 +62,4 @@ case 4:
         }
         break;
 }
+*/
